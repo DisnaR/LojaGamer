@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loja GameR</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js" integrity="sha512-efAcjYoYT0sXxQRtxGY37CKYmqsFVOIwMApaEbrxJr4RwqVVGw8o+Lfh/+59TU07+suZn1BWq4fDl5fdgyCNkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            var $ = jQuery.noConflict();
+        </script>
+        <script src="main.js"></script>
+    </head>                
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Loja GameR</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#prod2" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Detalhes da Loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#prod" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nossos Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="prod2">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./Imagens/slides/slide1.jpg" alt="Note">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./Imagens/slides/slide2.jpg" alt="Mouse">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./Imagens/slides/slide3.jpg" alt="Fone">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./Imagens/loja.webp" class="d-block w-100 rounded" alt="Loja">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a loja</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate non deserunt rerum? Labore eveniet quo natus nobis in vero, cum provident id voluptate architecto, ratione veniam minima laudantium porro tempora!
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">os Equipamentos GameR</span></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ab rerum suscipit cum nobis dolor natus! Nostrum debitis, quia magni iusto amet natus error, ipsam aliquid quis ex facere dolores.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ab rerum suscipit cum nobis dolor natus! Nostrum debitis, quia magni iusto amet natus error, ipsam aliquid quis ex facere dolores.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Campeonatos <span class="text-colored">Nacionais / Internacionais</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./Imagens/eventos/pt-br-28br-social-bp-keyart-social-2logos-1920x1080-fbcef5d1faeb.jpg" class="d-block w-100 rounded mb-2" alt="">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-file-play"></i>
+                            Fortnite - Sub Mundo
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis dignissimos, error voluptate ab repellendus consequatur ducimus maxime vero alias veniam qui et officia hic nam neque iste. Laboriosam, cupiditate.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./Imagens/eventos/pt-br-28comp-fncs-keyart-logo-2024-social-1920x1080-8bdd43660cee.jpg" class="d-block w-100 rounded mb-2" alt="">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-activity"></i>
+                            FNCS - Fortnite
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis dignissimos, error voluptate ab repellendus consequatur ducimus maxime vero alias veniam qui et officia hic nam neque iste. Laboriosam, cupiditate.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./Imagens/eventos/six-invitational-2024 (1).jpg" class="d-block w-100 rounded mb-2" alt="">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-6-circle"></i>    
+                            Rainbow 6
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis dignissimos, error voluptate ab repellendus consequatur ducimus maxime vero alias veniam qui et officia hic nam neque iste. Laboriosam, cupiditate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="prod" class="pt-5 pb-5" data-bs-spy="scroll" data-bs-target="#menu-navegacao">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nossos <span class="text-colored">Produtos</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-prod">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#Laptop" class="fw-bold text-start nav-link text-colored active">Laptop</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#Mouse" class="fw-bold text-start nav-link text-colored">Mouse</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#Teclado" class="fw-bold text-start nav-link text-colored">Teclado</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#Fone" class="fw-bold text-start nav-link text-colored">Fone de Ouvido</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#Ace" class="fw-bold text-start nav-link text-colored">Acessórios</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Laptop">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Laptop/razer-blade-14-p10-500x500.webp" alt="Laptop 1">
+                                        <h5 class="text-colored fw-bold mt-2">Laptop 1</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Laptop/razer-blade-14-p10-500x500.webp" alt="Laptop 2">
+                                        <h5 class="text-colored fw-bold mt-2">Laptop 2</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Laptop/razer-blade-14-p10-500x500.webp" alt="Laptop 3">
+                                        <h5 class="text-colored fw-bold mt-2">Laptop 3</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Laptop/razer-blade-14-p10-500x500.webp" alt="Laptop 4">
+                                        <h5 class="text-colored fw-bold mt-2">Laptop 4</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Laptop/razer-blade-14-p10-500x500.webp" alt="Laptop 5">
+                                        <h5 class="text-colored fw-bold mt-2">Laptop 5</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Laptop/razer-blade-14-p10-500x500.webp" alt="Laptop 6">
+                                        <h5 class="text-colored fw-bold mt-2">Laptop 6</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Laptop/razer-blade-14-p10-500x500.webp" alt="Laptop 7">
+                                        <h5 class="text-colored fw-bold mt-2">Laptop 7</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Laptop/razer-blade-14-p10-500x500.webp" alt="Laptop 8">
+                                        <h5 class="text-colored fw-bold mt-2">Laptop 8</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Mouse">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Mouse/500x500-dav3pro-black.webp" alt="Mouse 1">
+                                        <h5 class="text-colored fw-bold mt-2">Mouse 1</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Mouse/basilisk-v3_500x500.png" alt="Mouse 2">
+                                        <h5 class="text-colored fw-bold mt-2">Mouse 2</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>                                    
+                                </div>                                
+                            </div>
+                            <div class="tab-pane" id="Teclado">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Teclado/deathstalker-v2_500x500.png" alt="Teclado 1">
+                                        <h5 class="text-colored fw-bold mt-2">Teclado 1</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Teclado/deathstalker-v2_500x500.png" alt="Teclado 2">
+                                        <h5 class="text-colored fw-bold mt-2">Teclado 2</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div> 
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Teclado/deathstalker-v2_500x500.png" alt="Teclado 3">
+                                        <h5 class="text-colored fw-bold mt-2">Teclado 3</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div> 
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Teclado/deathstalker-v2_500x500.png" alt="Teclado 4">
+                                        <h5 class="text-colored fw-bold mt-2">Teclado 4</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Fone">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Fone de Ouvido/500x500-blackshark-v2-hyperspeed.webp" alt="Fone 1">
+                                        <h5 class="text-colored fw-bold mt-2">Fone 1</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Fone de Ouvido/blackshark-v2-x-usb-500x500-category.jpg" alt="Fone 2">
+                                        <h5 class="text-colored fw-bold mt-2">Fone 2</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>   
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Fone de Ouvido/headset-landingpg-500x500-barracuda.jpg" alt="Fone 3">
+                                        <h5 class="text-colored fw-bold mt-2">Fone 3</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Fone de Ouvido/headset-landingpg-500x500-barracudax.jpg" alt="SaFone 4">
+                                        <h5 class="text-colored fw-bold mt-2">Fone 4</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Ace">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Acessorios/https___hybrismediaprod.blob.core.windows.net_sys-master-phoenix-images-container_h08_h3a_9630572281886_kitty-ears-v2-quartz-500x500.png" alt="Acessório 1">
+                                        <h5 class="text-colored fw-bold mt-2">Acessório 1</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Imagens/produtos/Acessorios/https___hybrismediaprod.blob.core.windows.net_sys-master-phoenix-images-container_h61_h37_9630572314654_kitty-ears-v2-black-500x500.png" alt="Acessório 2">
+                                        <h5 class="text-colored fw-bold mt-2">Acessório 2</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="text" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua teste Exemplo nº 145, Bairro: Brooklin - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
